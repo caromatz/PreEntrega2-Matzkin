@@ -1,69 +1,69 @@
 /*reseteo de código*/
-*{
+* {
     margin: 0;
     padding: 0;
 
 }
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #dacccc;
-    font-family: "Roboto", sans-serif;
 
-}
-
-header{
+header {
     background-color: #6d9dd1;
     color: #fff;
     margin: 0px;
-    padding: 10px; 
+    padding: 10px;
 
 }
 
-.logo{
+.logo {
     text-align: center;
     border: #dacccc solid 5px;
     border-radius: 10px;
     padding: 10px;
     inline-size: 200px;
-    
+
 }
 
-.divlogo{
+.divlogo {
     text-align: center;
 }
 
-nav ul{
-    list-style: none;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 1200px;
-    border-radius: 8px;
+.navbar {
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
 }
 
-nav ul li{
-    display:inline-block;
+.navbar a {
+    text-decoration: none;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin:10px 20px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #dacccc;
+
+}
+
+.navbar a:hover {
+    color: #074383;
+}
+
+nav ul li {
+    display: inline-block;
     margin: 10px;
     padding: 20px;
-       
-}
-
-nav a{
-    color: rgb(51, 40, 137);
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 22px;
-    border: white solid 10px;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #dacccc;
-    text-decoration: none;
 
 }
 
 
+body {
+       background-color: #dacccc;
+    font-family: "Roboto", sans-serif;
 
-main{
+}
+
+
+main {
     padding: 20px;
     text-align: center;
     background-color: white;
@@ -71,78 +71,88 @@ main{
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
 }
 
 
-h1{
+h1 {
     text-align: center;
     padding: 10px;
     color: rgb(20, 14, 83);
     font-family: "Salsa", cursive;
-    
+
 }
-h2{
+
+h2 {
     text-align: center;
     padding: 10px;
-    color:rgb(20, 14, 83);
+    color: rgb(20, 14, 83);
     font-family: "Salsa", cursive;
 }
 
-p{
+p {
     padding: 10px;
     line-height: 1.5;
     font-size: 1.2rem;
     color: rgb(51, 40, 137);
     text-align: justify;
-   
+
 }
 
 
 
-footer{
+footer {
     padding: 10px;
     background-color: #6d9dd1;
     color: white;
     text-align: center;
-    
+
 }
 
-h4{
+h4 {
     display: inline-block;
 }
 
-.servicios{
-    inline-size: 200px;
+.containerservicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr;
+    gap: 10px;
+    text-align: center;
+
+}
+
+.servicio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios {
+    width: 200px;
     display: inline-block;
     border-radius: 10px;
     border: #6d9dd1 solid 5px;
     padding: 5px;
     margin: 10px;
     margin-bottom: 0px;
-    
+
 }
 
-.footerimg{
-    display: inline-block;
-    margin-left: 80px;
-    margin-right: 100px;
-    padding: 5px;
-    font-size: 0.9em;
-  
-}
+.footerimg {}
 
-form{
+form {
     text-align: center;
     padding: 5px;
-    
+
 }
 
-label{
+label {
     text-align: center;
     padding: 10px;
 }
 
-.registrarse{
+.registrarse {
     padding: 10px;
     margin-top: 20px;
 }
