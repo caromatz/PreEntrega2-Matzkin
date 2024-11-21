@@ -1,0 +1,22 @@
+@use "reset";
+
+.sobre {
+    padding: 20px;
+    border-radius: 8px;
+    border: 5px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.sobre h3 {
+    font-family: reset.$font_salsa;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: reset.$color_textos;
+}
+
+.sobre p {
+    font-family: reset.$font_roboto;
+    font-size: 1.1rem;
+    color: reset.$color_textos;
+    line-height: 1.6;
+}

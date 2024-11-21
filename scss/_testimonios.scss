@@ -1,0 +1,20 @@
+@use "reset";
+
+.testimonial {
+    background-color: reset.$color_contenido;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px reset.$color_sombra;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    em {
+        font-style: italic;
+        color: reset.$color_textos;
+    }
+
+    &:hover {
+        transform: scale(1.1, 1.1);
+        box-shadow: 0 8px 20px reset.$color_sombra;
+    }
+}

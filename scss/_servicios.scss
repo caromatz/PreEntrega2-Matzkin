@@ -1,0 +1,24 @@
+@use "reset";
+
+
+.containerservicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+
+    .servicio-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicios {
+        width: 200px;
+        display: inline-block;
+        border-radius: 10px;
+        border: reset.$color_fondo solid 5px;
+        padding: 5px;
+        margin: 10px;
+    }
+}

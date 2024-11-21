@@ -1,0 +1,16 @@
+@use "reset";
+
+// Footer
+footer {
+    margin: 15px auto;
+    padding: 20px;
+    background-color: reset.$color_fondo;
+    color: reset.$color_contenido;
+    text-align: center;
+    box-shadow: 0 4px 10px reset.$color_sombra;
+
+    h4 {
+        display: inline-block;
+        font-size: 1rem;
+    }
+}

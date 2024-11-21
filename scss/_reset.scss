@@ -1,0 +1,41 @@
+// Variables
+$color_fondo: #6d9dd1;
+$color_body: #dacccc;
+$color_boton: #dd86c6;
+$color_sombra: rgba(0, 0, 0, 0.3);
+$color_contenido: white;
+$color_textos: rgb(51, 40, 137);
+$font_roboto: 'Roboto', sans-serif;
+$font_salsa: 'Salsa', cursive;
+
+
+// Reseteo de código
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Mixin para botones
+@mixin button-styles($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+
+    &:hover {
+        background-color: lighten($bg-color, 10%);
+        color: darken($text-color, 10%);
+    }
+}
+
+// Body
+body {
+    background-color: $color_body;
+    font-family: $font_roboto;
+}

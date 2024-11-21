@@ -9,6 +9,10 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Conecto con el estilo -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Conecto animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Conecto AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Conecto con la font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,10 +26,12 @@
 <body>
     <header>
         <div class="divlogo">
-            <img class="logo" src="./images/logo.jpg" alt="Logo de MicroNexus">
+            <a href="./index.html">
+                <img class="logo" src="./images/logo.jpg" alt="Logo de MicroNexus">
+            </a>
         </div>
-        <h1>MicroNexus</h1>
-        <h2>Conectando servicios locales</h2>
+        <h1 class="animate__animated animate__zoomIn">MicroNexus</h1>
+        <h2 class="animate__animated animate__zoomIn">Conectando servicios locales</h2>
 
         <!-- Barra de navegación de Bootstrap -->
         <nav class="navbar navbar-expand-md bg-body-tertiary">
@@ -104,13 +110,13 @@
         </nav>
     </header>
 
-    <main>
+    <main data-aos="flip-left">
         <section id="intro">
             <h2>Bienvenidos a MicroNexus</h2>
             <p>Conectate con tu comunidad para obtener y ofrecer servicios de manera fácil y rápida.
                 <strong> <em>MicroNexus</em></strong> es tu plataforma local de confianza para encontrar expertos en
-                todo
-                tipo de microservicios, desde tareas domésticas hasta asistencia tecnológica. ¿Necesitas ayuda para el
+                todo tipo de microservicios, desde tareas domésticas hasta asistencia tecnológica. ¿Necesitas ayuda para
+                el
                 mantenimiento de tu hogar, soporte técnico, o cuidado de mascotas? ¡Aquí encontrarás a las personas
                 indicadas para cada tarea! Descubrí la comodidad de acceder a servicios cerca tuyo. Al unirte, no solo
                 resolvés tus necesidades, sino que también apoyas a los profesionales locales.
@@ -119,6 +125,17 @@
                     class="text-white text-decoration-none">¡Unite ahora!</a></button>
         </section>
 
+        <aside class="complemento animado">
+            <h4 class="aside-titulo">¿Sabías qué?</h4>
+            <p class="aside-texto">MicroNexus ha conectado a más de <strong>5,000 usuarios</strong> en su primer año.
+            </p>
+            <h4 class="aside-titulo">Servicios más populares</h4>
+            <ul class="aside-lista">
+                <li class="ejemplo">Limpieza</li>
+                <li class="ejemplo">Jardinería</li>
+                <li class="ejemplo">Reparaciones</li>
+            </ul>
+        </aside>
 
     </main>
 
@@ -135,6 +152,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- Conecto con AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Inicio AOS script -->
+    <script>AOS.init();</script>
 </body>
 
 </html>

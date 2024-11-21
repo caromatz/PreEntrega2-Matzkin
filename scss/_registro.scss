@@ -1,0 +1,33 @@
+@use "reset";
+
+// Formulario
+.containerform {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: reset.$color_contenido;
+
+    .form-label {
+        display: block;
+        font-weight: bold;
+        color: reset.$color_textos;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid reset.$color_body;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: reset.$color_contenido;
+
+        &:focus {
+            border-color: reset.$color_boton;
+            outline: none;
+        }
+    }
+}

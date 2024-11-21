@@ -1,0 +1,79 @@
+@use "reset";
+
+main {
+    padding: 20px;
+    text-align: center;
+    background: radial-gradient(circle, reset.$color_contenido, reset.$color_body);
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px reset.$color_sombra;
+}
+
+@keyframes titilar-aside {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.complemento {
+    animation-name: titilar-aside;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    padding: 20px;
+    background-color: reset.$color_contenido;
+    border: 1px solid reset.$color_fondo;
+    border-radius: 80px;
+    font-family: reset.$font_roboto;
+    max-width: 300px;
+    margin-right: 20px;
+    position: absolute;
+    right: 0;
+
+
+    .aside-titulo {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        font-family: reset.$font_salsa;
+        color: reset.$color_textos;
+    }
+
+    .aside-texto {
+        font-size: 1.1rem;
+        color: reset.$color_textos;
+        margin-bottom: 20px;
+    }
+
+    .aside-lista {
+        list-style-type: disc;
+        margin-left: 20px;
+        color: reset.$color_textos;
+
+        .ejemplo {
+
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: reset.$color_textos;
+            font-weight: bold;
+        }
+    }
+
+}
+
+
+
+.btn {
+    @include reset.button-styles(reset.$color_fondo, white);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+        transform: scale(1.2, 1.2);
+        background-color: lighten(reset.$color_fondo, 15%);
+    }
+}

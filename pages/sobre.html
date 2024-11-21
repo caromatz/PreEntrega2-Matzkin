@@ -9,6 +9,10 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Conecto con el estilo -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Conecto animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Conecto AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Conecto con la font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,10 +28,12 @@
 <body>
     <header>
         <div class="divlogo">
-            <img class="logo" src="../images/logo.jpg" alt="Logo">
+            <a href="../index.html">
+                <img class="logo" src="../images/logo.jpg" alt="Logo de MicroNexus">
+            </a>
         </div>
-        <h1>MicroNexus</h1>
-        <h2>Conectando servicios locales</h2>
+        <h1 class="animate__animated animate__zoomIn">MicroNexus</h1>
+        <h2 class="animate__animated animate__zoomIn">Conectando servicios locales</h2>
         <!-- Barra de navegación de Bootstrap -->
         <nav class="navbar navbar-expand-md bg-body-tertiary">
             <div class="container-fluid">
@@ -104,17 +110,47 @@
             </div>
         </nav>
     </header>
-    <main>
+
+    <main data-aos="flip-left">
         <h2>Sobre Nosotros</h2>
-        <p>Nuestro objetivo es facilitar el acceso a servicios de calidad y fomentar la colaboración entre vecinos.
-            Nos apasiona el desarrollo de las comunidades locales, y trabajamos para hacer que el acceso a servicios de
-            calidad esté al alcance de todos. A través de <strong> <em>MicroNexus</em></strong>, las personas pueden
-            encontrar a profesionales o vecinos dispuestos a ayudar en una amplia variedad de tareas, todo dentro de su
-            entorno cercano.
+        <p>Nuestro objetivo es facilitar el acceso a servicios de calidad y fomentar la colaboración entre vecinos...
+            A través de <strong><em>MicroNexus</em></strong>, las personas pueden encontrar a profesionales o vecinos
+            dispuestos a ayudar en una amplia variedad de tareas, todo dentro de su entorno cercano.
             Con una interfaz amigable y centrada en el usuario, buscamos no solo conectar personas, sino también
             fortalecer la confianza y el sentido de comunidad en cada interacción. Estamos aquí para ayudar a que cada
             conexión cuente, facilitando soluciones diarias y promoviendo un ambiente de cooperación local.</p>
+
+        <section class="sobre">
+            <h3>Nuestra Historia</h3>
+            <p>Fundada en 2024, <strong><em>MicroNexus</em></strong> nació con el objetivo de crear una plataforma donde
+                los
+                vecinos puedan conectarse para ofrecer y recibir servicios de manera fácil y eficiente. Desde nuestra
+                creación, hemos trabajado para mejorar nuestra plataforma y expandir nuestra red, incorporando nuevas
+                funcionalidades que facilitan la interacción entre usuarios. Nuestro enfoque siempre ha sido apoyar el
+                comercio local y crear un sentido de comunidad entre las personas que forman parte de nuestra red.</p>
+        </section>
+
+        <section class="sobre">
+            <h3>Nuestra Misión</h3>
+            <p>Nuestra misión es ser el puente que conecta a las personas con los servicios que necesitan de una manera
+                ágil y confiable. Queremos fomentar un entorno de apoyo mutuo en el que tanto proveedores como
+                usuarios puedan tener una experiencia satisfactoria, sencilla y eficiente. Creemos que los pequeños
+                negocios y servicios locales tienen un gran valor en la construcción de comunidades sólidas y
+                saludables, y nos esforzamos por ser una herramienta que ayude a que esto se haga realidad.</p>
+        </section>
+
+        <section class="sobre">
+            <h3>Valores</h3>
+            <p>En <strong><em>MicroNexus</em></strong> nos guiamos por valores de confianza, cooperación y respeto.
+                Creemos en la importancia de fomentar relaciones transparentes y honestas, y nos comprometemos a ofrecer
+                una plataforma segura, accesible y amigable para todos nuestros usuarios. La colaboración y la
+                solidaridad
+                son las bases de nuestra filosofía de trabajo, siempre con el objetivo de construir una comunidad más
+                fuerte
+                y conectada.</p>
+        </section>
     </main>
+
     <footer>
         <div class="contact-info">
             <h4>E-mail📧 info@micronexus.com -</h4>
@@ -128,6 +164,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- Conecto con AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Inicio AOS script -->
+    <script>AOS.init();</script>
 
 </body>
 
