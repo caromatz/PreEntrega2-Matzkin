@@ -62,7 +62,36 @@ p {
 
         &:hover {
             background-color: reset.$color_boton;
-            color: white;
+            color: reset.$color_contenido;
         }
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: reset.$color_body;
+        border-radius: 5px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        width: max-content;
+        overflow: hidden 400px;
+        max-height: 400px;
+        overflow-y: auto;
+
+        .dropdown-item {
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            font-weight: normal;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: reset.$color_boton;
+                color: reset.$color_contenido;
+            }
+        }
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
     }
 }
