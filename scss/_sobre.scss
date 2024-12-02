@@ -1,10 +1,25 @@
 @use "reset";
 
+.textonosotros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columnas iguales */
+    grid-template-rows: 1fr 0.5fr;  /* 2 filas, una más grande que la otra */
+    grid-template-areas: 
+        "nosotros historia mision"  /* primera fila con 3 columnas */
+        "valores valores valores";  /* segunda fila que ocupa 3 columnas */
+    
+    gap: 10px; 
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
 .sobre {
     padding: 20px;
     border-radius: 8px;
     border: 5px solid #ddd;
     margin-bottom: 20px;
+    background-color: #f9f9f9; 
 }
 
 .sobre h3 {
@@ -19,4 +34,23 @@
     font-size: 1.1rem;
     color: reset.$color_textos;
     line-height: 1.6;
+    text-align: center;
+}
+
+/* Asignando áreas a las secciones */
+
+.sobre.nosotros {
+    grid-area: nosotros;
+}
+
+.sobre.historia {
+    grid-area: historia;
+}
+
+.sobre.mision {
+    grid-area: mision;
+}
+
+.sobre.valores {
+    grid-area: valores;
 }

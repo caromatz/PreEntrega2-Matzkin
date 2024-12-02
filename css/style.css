@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -190,6 +191,18 @@ footer {
 footer h4 {
   display: inline-block;
   font-size: 1rem;
+  padding: 5px;
+}
+
+.textonosotros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  grid-template-rows: 1fr 0.5fr; /* 2 filas, una más grande que la otra */
+  grid-template-areas: "nosotros historia mision" "valores valores valores"; /* segunda fila que ocupa 3 columnas */
+  gap: 10px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .sobre {
@@ -197,6 +210,7 @@ footer h4 {
   border-radius: 8px;
   border: 5px solid #ddd;
   margin-bottom: 20px;
+  background-color: #f9f9f9;
 }
 
 .sobre h3 {
@@ -211,6 +225,24 @@ footer h4 {
   font-size: 1.1rem;
   color: rgb(51, 40, 137);
   line-height: 1.6;
+  text-align: center;
+}
+
+/* Asignando áreas a las secciones */
+.sobre.nosotros {
+  grid-area: nosotros;
+}
+
+.sobre.historia {
+  grid-area: historia;
+}
+
+.sobre.mision {
+  grid-area: mision;
+}
+
+.sobre.valores {
+  grid-area: valores;
 }
 
 .containerservicios {
