@@ -6,15 +6,30 @@
     margin: 20px auto;
     border-radius: 8px;
     box-shadow: 0 4px 15px reset.$color_sombra;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-    em {
-        font-style: italic;
-        color: reset.$color_textos;
+
+    .testimonial-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid #030202;
+            
+        }
     }
+}
 
-    &:hover {
-        transform: scale(1.1, 1.1);
-        box-shadow: 0 8px 20px reset.$color_sombra;
+.carousel-inner {
+    .carousel-item {
+        text-align: center;
+
+        .testimonial {
+            max-width: 600px;
+            margin: 0 auto;
+        }
     }
 }

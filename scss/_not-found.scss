@@ -1,0 +1,102 @@
+@use "reset";
+
+/* Contenedor principal de la página 404 */
+.container-404 {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+
+  .beach-container {
+    background-color: #f3f3f3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+
+    .error-code {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #ff5733;
+    }
+
+    .nexus-img {
+      margin: 20px 0;
+      width: 200px;
+      animation: bounceIn 1s ease;
+    }
+
+    .message {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .reload-message {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .beach-message {
+      font-size: 1.2rem;
+      color: #888;
+    }
+  }
+
+  .waves-container {
+    position: relative;
+    background: url('url-de-tu-imagen-de-olas.png') repeat-x;
+    height: 100px;
+    width: 100%;
+    animation: wave 10s linear infinite;
+  }
+
+  .return-link {
+    font-size: 1.2rem;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+      color: white;
+    }
+  }
+}
+
+/* Animación de olas */
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Estilos del footer */
+.footer-container {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  .contact-info h4 {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  .contact-info a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+}

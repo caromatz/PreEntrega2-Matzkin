@@ -2,11 +2,11 @@
 
 .textonosotros {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* 3 columnas iguales */
-    grid-template-rows: 1fr 0.5fr;  /* 2 filas, una más grande que la otra */
+    grid-template-columns: repeat(3, 1fr);  
+    grid-template-rows: 1fr 0.5fr;  
     grid-template-areas: 
-        "nosotros historia mision"  /* primera fila con 3 columnas */
-        "valores valores valores";  /* segunda fila que ocupa 3 columnas */
+        "nosotros historia mision" 
+        "valores valores valores";  
     
     gap: 10px; 
     padding: 20px;
@@ -19,7 +19,32 @@
     border-radius: 8px;
     border: 5px solid #ddd;
     margin-bottom: 20px;
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
+    transition: all 0.3s ease; /* Añadido para suavizar la transición del hover */
+
+    /* Hover global para todos los recuadros */
+    &:hover {
+        background-color: #e0e0e0; /* Cambia el color de fondo al pasar el mouse */
+        border-color: #ccc;  /* Cambia el color del borde */
+        transform: scale(1.05); /* Aumenta ligeramente el tamaño del recuadro */
+    }
+
+    /* Efectos específicos para cada área */
+    &.nosotros:hover {
+        background-color: #d4edda; /* Color específico para el hover de la sección 'nosotros' */
+    }
+
+    &.historia:hover {
+        background-color: #f8d7da; /* Color específico para el hover de la sección 'historia' */
+    }
+
+    &.mision:hover {
+        background-color: #cce5ff; /* Color específico para el hover de la sección 'mision' */
+    }
+
+    &.valores:hover {
+        background-color: #fff3cd; /* Color específico para el hover de la sección 'valores' */
+    }
 }
 
 .sobre h3 {
