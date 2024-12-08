@@ -1,6 +1,6 @@
-$color_fondo: #6d9dd1;
-$color_body: #dacccc;
-$color_boton: #dd86c6;
+$color_fondo: #bacba38d;
+$color_body: #93c6773e;
+$color_boton: #052414ae;
 $color_sombra: rgba(0, 0, 0, 0.3);
 $color_contenido: white;
 $color_textos: rgb(51, 40, 137);
@@ -14,24 +14,31 @@ $font_salsa: 'Salsa', cursive;
     box-sizing: border-box;
 }
 
-@mixin button-styles($bg-color, $text-color) {
-    background-color: $bg-color;
-    color: $text-color;
+@mixin button-styles($color_fondo, $color_boton) {
+    background-color: $color_fondo;
+    color: $color_boton;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     text-align: center;
-    border: none;
-
+    border: 4px solid white;
+    
     &:hover {
-        background-color: lighten($bg-color, 10%);
-        color: darken($text-color, 10%);
+        background-color: darken($color_fondo, 10%); 
+        color: black; 
     }
 }
 
 body {
     background-color: $color_body;
     font-family: $font_roboto;
+    background-image: url('../images/fondos.jpg');
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+    background-color: $color_body; 
+    
 }

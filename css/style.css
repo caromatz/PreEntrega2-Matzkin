@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +5,25 @@
 }
 
 body {
-  background-color: #dacccc;
+  background-color: rgba(147, 198, 119, 0.2431372549);
   font-family: "Roboto", sans-serif;
+  background-image: url("../images/fondos.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: rgba(147, 198, 119, 0.2431372549);
 }
 
 header {
-  background-color: #6d9dd1;
+  background-color: rgba(186, 203, 163, 0.5529411765);
   padding: 15px;
 }
 header .divlogo {
   text-align: center;
 }
 header .logo {
-  border: 5px solid #dacccc;
+  border: 5px solid white;
   border-radius: 10px;
   padding: 5px;
   margin: 5px auto;
@@ -52,6 +57,7 @@ p {
   margin: 10px;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(147, 198, 119, 0.2431372549);
 }
 .navbar a {
   text-decoration: none;
@@ -60,33 +66,32 @@ p {
   font-weight: bold;
   border-radius: 5px;
   padding: 10px;
-  background-color: #dacccc;
+  background-color: rgba(147, 198, 119, 0.2431372549);
   transition: background-color 0.3s, color 0.3s;
 }
 .navbar a:hover {
-  background-color: #dd86c6;
+  background-color: rgba(5, 36, 20, 0.6823529412);
   color: white;
 }
 .navbar .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #dacccc;
   border-radius: 5px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  width: max-content;
-  overflow: hidden 400px;
+  z-index: 2;
+  width: auto;
   max-height: 400px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .navbar .dropdown-menu .dropdown-item {
   padding: 8px 16px;
   font-size: 0.85rem;
   font-weight: normal;
   border-radius: 5px;
+  white-space: nowrap;
 }
 .navbar .dropdown-menu .dropdown-item:hover {
-  background-color: #dd86c6;
+  background-color: rgba(5, 36, 20, 0.6823529412);
   color: white;
 }
 .navbar .dropdown:hover .dropdown-menu {
@@ -96,7 +101,7 @@ p {
 main {
   padding: 20px;
   text-align: center;
-  background: radial-gradient(circle, white, #dacccc);
+  background: radial-gradient(circle, white, rgba(147, 198, 119, 0.2431372549));
   margin: 20px auto;
   max-width: 800px;
   border-radius: 8px;
@@ -120,24 +125,29 @@ main {
   flex-shrink: 0;
   width: 300px;
   padding: 20px;
-  border: 4px solid #6d9dd1;
+  border: 4px solid rgba(186, 203, 163, 0.5529411765);
   border-radius: 10px;
   background-color: white;
   animation-name: titilar-aside;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   font-family: "Roboto", sans-serif;
+  margin-bottom: 70px;
+  padding: 10px;
 }
 .complemento .aside-titulo {
   font-family: "Salsa", cursive;
   color: rgb(51, 40, 137);
   font-size: 1.5rem;
   margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 10px;
 }
 .complemento .aside-texto {
   color: rgb(51, 40, 137);
   font-size: 1.1rem;
   margin-bottom: 15px;
+  padding: 10px;
 }
 .complemento .aside-lista {
   list-style-type: disc;
@@ -146,9 +156,11 @@ main {
 }
 .complemento .aside-lista .ejemplo {
   font-size: 0.9rem;
-  margin-bottom: 10px;
+  margin: 0 auto;
   color: rgb(51, 40, 137);
   font-weight: bold;
+  text-align: start;
+  padding: 10px;
 }
 
 @keyframes titilar-aside {
@@ -160,31 +172,31 @@ main {
   }
 }
 .btn {
-  background-color: #6d9dd1;
-  color: white;
+  background-color: rgba(186, 203, 163, 0.5529411765);
+  color: rgba(5, 36, 20, 0.6823529412);
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   text-align: center;
-  border: none;
+  border: 4px solid white;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 .btn:hover {
-  background-color: rgb(147.78125, 183.03125, 221.21875);
-  color: rgb(229.5, 229.5, 229.5);
+  background-color: rgba(161.5625, 184.5833333333, 130.4166666667, 0.5529411765);
+  color: black;
 }
 .btn:hover {
   transform: scale(1.2, 1.2);
-  background-color: rgb(167.171875, 196.046875, 227.328125);
+  background-color: rgba(149.34375, 175.375, 114.125, 0.5529411765);
 }
 
 footer {
   margin: 15px auto;
   padding: 20px;
-  background-color: #6d9dd1;
-  color: white;
+  background-color: rgba(186, 203, 163, 0.5529411765);
+  color: rgb(51, 40, 137);
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -210,27 +222,25 @@ footer h4 {
   border-radius: 8px;
   border: 5px solid #ddd;
   margin-bottom: 20px;
-  background-color: #f9f9f9;
-  transition: all 0.3s ease; /* Añadido para suavizar la transición del hover */
-  /* Hover global para todos los recuadros */
-  /* Efectos específicos para cada área */
+  background-color: white;
+  transition: all 0.3s ease;
 }
 .sobre:hover {
-  background-color: #e0e0e0; /* Cambia el color de fondo al pasar el mouse */
-  border-color: #ccc; /* Cambia el color del borde */
-  transform: scale(1.05); /* Aumenta ligeramente el tamaño del recuadro */
+  background-color: #e0e0e0;
+  border-color: #ccc;
+  transform: scale(1.05);
 }
 .sobre.nosotros:hover {
-  background-color: #d4edda; /* Color específico para el hover de la sección 'nosotros' */
+  background-color: #d4edda;
 }
 .sobre.historia:hover {
-  background-color: #f8d7da; /* Color específico para el hover de la sección 'historia' */
+  background-color: #d4edda;
 }
 .sobre.mision:hover {
-  background-color: #cce5ff; /* Color específico para el hover de la sección 'mision' */
+  background-color: #d4edda;
 }
 .sobre.valores:hover {
-  background-color: #fff3cd; /* Color específico para el hover de la sección 'valores' */
+  background-color: #d4edda;
 }
 
 .sobre h3 {
@@ -248,7 +258,6 @@ footer h4 {
   text-align: center;
 }
 
-/* Asignando áreas a las secciones */
 .sobre.nosotros {
   grid-area: nosotros;
 }
@@ -265,22 +274,25 @@ footer h4 {
   grid-area: valores;
 }
 
-.containerservicios {
+.serviciosmain {
+  background-color: #f9f9f9;
+}
+.serviciosmain .containerservicios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   text-align: center;
 }
-.containerservicios .servicio-item {
+.serviciosmain .containerservicios .servicio-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.containerservicios .servicios {
+.serviciosmain .containerservicios .servicios {
   width: 200px;
   display: inline-block;
   border-radius: 10px;
-  border: #6d9dd1 solid 5px;
+  border: rgba(186, 203, 163, 0.5529411765) solid 5px;
   padding: 5px;
   margin: 10px;
 }
@@ -303,28 +315,14 @@ footer h4 {
 .containerform .form-control {
   width: 100%;
   padding: 10px;
-  border: 1px solid #dacccc;
+  border: 1px solid rgba(147, 198, 119, 0.2431372549);
   border-radius: 4px;
   font-size: 16px;
   background-color: white;
 }
 .containerform .form-control:focus {
-  border-color: #dd86c6;
+  border-color: rgba(5, 36, 20, 0.6823529412);
   outline: none;
-}
-.containerform .btn {
-  width: 100%;
-  padding: 10px;
-  background-color: #dd86c6;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.containerform .btn:hover {
-  background-color: rgb(209.8129032258, 94.1870967742, 179.2451612903);
 }
 .containerform .form-check-label {
   font-size: 14px;
@@ -332,21 +330,6 @@ footer h4 {
 }
 .containerform .form-check-input {
   margin-right: 10px;
-}
-.containerform .form-check {
-  margin-bottom: 10px;
-}
-.containerform .genero-container {
-  display: flex;
-  justify-content: centerflex flex-start;
-  gap: 20px;
-}
-.containerform .genero-container .form-check {
-  display: inline-block;
-  margin-bottom: 0;
-}
-.containerform .form-check {
-  margin-right: 20px;
 }
 
 .testimonial {
@@ -376,18 +359,104 @@ footer h4 {
   margin: 0 auto;
 }
 
+.page-404-header {
+  text-align: center;
+  background: transparent;
+}
+
+.page-404-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-image: url(../images/servidor.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+.page-404-body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(233, 227, 227, 0.86);
+  z-index: -1;
+}
+
+.page-404-nav {
+  background: transparent;
+}
+
+.container-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  background: transparent;
+}
+.container-404 .beach-container {
+  max-width: 600px;
+  margin: 20px;
+}
+.container-404 .beach-container .code-404 {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  color: rgb(51, 40, 137);
+  text-align: center;
+}
+.container-404 .beach-container .message,
+.container-404 .beach-container .reload-message,
+.container-404 .beach-container .beach-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: rgb(51, 40, 137);
+}
+.container-404 .return-link {
+  font-size: 1.2rem;
+  color: rgb(51, 40, 137);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  border: 7px solid rgba(5, 36, 20, 0.6823529412);
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+.container-404 .return-link:hover {
+  background-color: #c92287;
+  color: white;
+}
+
+.page-404-footer {
+  text-align: center;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  padding: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px 0;
   }
   .navbar a {
     margin: 5px 0;
     width: 100%;
     text-align: left;
+    padding: 10px;
   }
   .logo {
-    inline-size: 150px;
+    width: 150px;
   }
   .containerservicios {
     grid-template-columns: 1fr 1fr;
@@ -411,19 +480,52 @@ footer h4 {
     margin-bottom: 20px;
     position: relative;
   }
+  .testimonial-image img {
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+  }
+  .carousel-item .testimonial {
+    max-width: 500px;
+  }
+  .textonosotros {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "nosotros historia" "mision valores";
+    gap: 20px;
+  }
+  .sobre h3 {
+    font-size: 1.6rem;
+  }
+  .sobre p {
+    font-size: 1rem;
+  }
+  .containerform {
+    width: 90%;
+    padding: 15px;
+    margin: 0 auto;
+  }
+  .form-control {
+    font-size: 14px;
+    padding: 8px;
+  }
 }
 @media screen and (max-width: 480px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px 0;
   }
   .navbar a {
     margin: 5px 0;
     width: 100%;
     text-align: left;
+    padding: 12px;
   }
   .logo {
-    inline-size: 100px;
+    width: 100px;
   }
   .containerservicios {
     grid-template-columns: 1fr;
@@ -446,93 +548,35 @@ footer h4 {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-}
-/* Contenedor principal de la página 404 */
-.container-404 {
-  text-align: center;
-  padding: 20px;
-  font-family: "Roboto", sans-serif;
-}
-.container-404 .beach-container {
-  background-color: #f3f3f3;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-}
-.container-404 .beach-container .error-code {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #ff5733;
-}
-.container-404 .beach-container .nexus-img {
-  margin: 20px 0;
-  width: 200px;
-  animation: bounceIn 1s ease;
-}
-.container-404 .beach-container .message {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #333;
-}
-.container-404 .beach-container .reload-message {
-  font-size: 1rem;
-  color: #666;
-}
-.container-404 .beach-container .beach-message {
-  font-size: 1.2rem;
-  color: #888;
-}
-.container-404 .waves-container {
-  position: relative;
-  background: url("url-de-tu-imagen-de-olas.png") repeat-x;
-  height: 100px;
-  width: 100%;
-  animation: wave 10s linear infinite;
-}
-.container-404 .return-link {
-  font-size: 1.2rem;
-  color: #007bff;
-  text-decoration: none;
-  margin-top: 20px;
-  display: inline-block;
-  font-weight: 600;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-.container-404 .return-link:hover {
-  background-color: #0056b3;
-  color: white;
-}
-
-/* Animación de olas */
-@keyframes wave {
-  0% {
-    transform: translateX(0);
+  .testimonial-image img {
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
   }
-  100% {
-    transform: translateX(-100%);
+  .carousel-item .testimonial {
+    max-width: 100%;
   }
-}
-/* Estilos del footer */
-.footer-container {
-  background-color: #333;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-.footer-container .contact-info h4 {
-  margin: 10px 0;
-  font-size: 1rem;
-}
-.footer-container .contact-info a {
-  color: #ffcc00;
-  text-decoration: none;
-  font-weight: bold;
-}
-.footer-container .contact-info a:hover {
-  text-decoration: underline;
+  .textonosotros {
+    grid-template-columns: 1fr;
+    grid-template-areas: "nosotros" "historia" "mision" "valores";
+    gap: 15px;
+  }
+  .sobre h3 {
+    font-size: 1.4rem;
+  }
+  .sobre p {
+    font-size: 0.9rem;
+  }
+  .containerform {
+    width: 80%;
+    padding: 10px;
+  }
+  .form-control {
+    font-size: 12px;
+    padding: 6px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

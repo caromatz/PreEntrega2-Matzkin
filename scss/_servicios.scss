@@ -1,11 +1,14 @@
 @use "reset";
 
-
-.containerservicios {
+.serviciosmain {
+    background-color: #f9f9f9;
+    
+    .containerservicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     text-align: center;
+    
 
     .servicio-item {
         display: flex;
@@ -21,4 +24,5 @@
         padding: 5px;
         margin: 10px;
     }
+}
 }

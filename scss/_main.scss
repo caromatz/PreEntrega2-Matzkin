@@ -8,6 +8,7 @@ main {
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 4px 10px reset.$color_sombra;
+        
 }
 
 .contenido-principal {
@@ -30,23 +31,27 @@ main {
     border: 4px solid reset.$color_fondo;
     border-radius: 10px;
     background-color: reset.$color_contenido;
-
     animation-name: titilar-aside;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     font-family: reset.$font_roboto;
+    margin-bottom: 70px;
+    padding: 10px;
 
     .aside-titulo {
         font-family: reset.$font_salsa;
         color: reset.$color_textos;
         font-size: 1.5rem;
         margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 10px;
     }
 
     .aside-texto {
         color: reset.$color_textos;
         font-size: 1.1rem;
         margin-bottom: 15px;
+        padding: 10px;
     }
 
     .aside-lista {
@@ -56,9 +61,11 @@ main {
 
         .ejemplo {
             font-size: 0.9rem;
-            margin-bottom: 10px;
+            margin: 0 auto;
             color: reset.$color_textos;
             font-weight: bold;
+            text-align: start;
+            padding: 10px;
         }
     }
 }
@@ -78,11 +85,11 @@ main {
 
 
 .btn {
-    @include reset.button-styles(reset.$color_fondo, white);
+    @include reset.button-styles(reset.$color_fondo, reset.$color_boton);
     transition: transform 0.3s ease, background-color 0.3s ease;
 
     &:hover {
         transform: scale(1.2, 1.2);
-        background-color: lighten(reset.$color_fondo, 15%);
+        background-color: darken(reset.$color_fondo, 15%);
     }
 }

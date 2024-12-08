@@ -4,11 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta description -->
+    <meta name="description"
+        content="¡404! El Nexus se tomó un descanso. La página que buscas no existe, pero no te preocupes, puedes volver al inicio y descubrir todos los servicios locales que MicroNexus tiene para ti.">
+    <!-- Meta keywords -->
+    <meta name="keywords"
+        content="404 error, página no encontrada, MicroNexus, volver al inicio, servicios locales, conectar profesionales, error página, Nexus descanso, servicios cerca de ti">
+    <!-- Conecto con Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Conecto con el estilo -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Conecto animate.style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- Conecto AOS-->
+    <!-- Conecto AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Conecto con la font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,55 +26,143 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Salsa&display=swap"
         rel="stylesheet">
-    <title>MicroNexus</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>MicroNexus - Página no encontrada</title>
 </head>
-<body>
+
+<body class="page-404-body">
+    <header class="page-404-header">
+        <div class="divlogo-404">
+            <a href="./index.html">
+                <img class="logo" src="./images/logo.jpg" alt="Logo de MicroNexus">
+            </a>
+        </div>
+        <h1 class="animate__animated animate__zoomIn">MicroNexus</h1>
+        <h2 class="animate__animated animate__zoomIn">Conectando servicios locales</h2>
+
+        <!-- Barra de navegación de Bootstrap -->
+        <nav class="navbar navbar-expand-md page-404-nav">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobre.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="./pages/servicios.html" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/servicios.html">Todos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/servicios.html">Limpieza</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/servicios.html">Jardinería</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/servicios.html">Reparaciones</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/servicios.html">Transporte</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/servicios.html">Eventos</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/servicios.html">Mascotas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/servicios.html">Fitness</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/servicios.html">Mantenimiento</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/servicios.html">Estilismo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/testimonios.html">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/registro.html">Registrate</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <div class="container-404">
         <div class="beach-container" data-aos="zoom-in" data-aos-delay="500">
-            <p class="error-code">404: Página no encontrada</p>
-           
+            <p class="code-404">404: Página no encontrada</p>
             <p class="message">¡El Nexus decidió tomarse un descanso! 🌴☕</p>
             <p class="reload-message">Está recargando energías para un nuevo ciclo...</p>
             <p class="beach-message">¡No te preocupes, vuelve pronto!</p>
         </div>
-        <div>
-            <a href="/" class="return-link animate__animated animate__fadeIn animate__delay-1s">Volver al Nexus</a>
+        <a href="./index.html" class="return-link animate__animated animate__fadeIn animate__delay-1s"
+            aria-label="Volver al inicio del Nexus">Volver al Nexus</a>
+    </div>
+
+
+    <footer class="page-404-footer">
+        <div class="contact-info">
+            <h4>
+                E-mail
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@micronexus.com" target="_blank">📧</a>
+                info@micronexus.com
+            </h4>
+            <h4>
+                Teléfono
+                <a href="tel:+5491198756412">☎️</a> +5491198756412
+            </h4>
+            <h4>
+                Instagram
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="./images/instagram.jpg" alt="logo instagram">
+                </a>
+                @micronexus
+            </h4>
+            <h4>
+                Facebook
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="./images/facebook.png" alt="logo facebook">
+                </a>
+                Micronexus
+            </h4>
         </div>
-    </div>
+    </footer>
 
-  <footer class="footer-container">
-    <div class="contact-info">
-        <h4>
-            E-mail 
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@micronexus.com" target="_blank">📧</a> 
-            info@micronexus.com
-        </h4>
-        <h4>
-            Teléfono 
-            <a href="tel:+5491198756412">☎️</a> +5491198756412
-        </h4>
-        <h4>
-            Instagram
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="./images/instagram.jpg" alt="logo instagram">
-            </a>
-            @micronexus
-        </h4>
-        <h4>
-            Facebook 
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="./images/facebook.png" alt="logo facebook">
-            </a>
-            Micronexus
-        </h4>
-    </div>
-</footer>
-
-
-<!-- Conecto con AOS -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!-- Inicio AOS script -->
-<script>AOS.init();</script>
+    <!-- Conecto con Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Conecto con AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Inicio AOS script -->
+    <script>AOS.init();</script>
 </body>
 
 </html>

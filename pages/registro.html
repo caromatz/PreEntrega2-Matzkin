@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta description -->
     <meta name="description"
-        content="¡Únete a MicroNexus! Regístrate ahora para acceder a una plataforma donde podrás ofrecer tus servicios o encontrar soluciones locales de calidad. Conecta con profesionales en limpieza, jardinería, transporte y mucho más. ¡Es rápido, fácil y gratuito!" />
+        content="¡Únete a MicroNexus! Regístrate ahora para acceder a una plataforma donde podrás ofrecer tus servicios o encontrar soluciones locales de calidad. ¡Es rápido, fácil y gratuito!" />
     <!-- Meta keywords -->
     <meta name="keywords"
         content="registro MicroNexus, plataforma de servicios locales, ofrecer servicios, servicios de limpieza, jardinería, transporte, eventos, mascotas, fitness, estilismo, registro rápido, comunidad de servicios, encontrar servicios cerca de mí" />
@@ -24,6 +25,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&family=Salsa&display=swap"
         rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <title>Micronexus - Registro</title>
 </head>
 
@@ -134,7 +137,7 @@
             <div class="mb-3">
                 <label for="rol" class="form-label">¿Qué rol deseas tener?</label>
                 <div class="d-flex">
-                    <div class="form-check">
+                    <div class="form-check ms-4">
                         <input type="radio" id="ofrecer_servicio" name="rol" value="ofrecer_servicio"
                             class="form-check-input" required>
                         <label for="ofrecer_servicio" class="form-check-label">Ofrecer servicio</label>
@@ -147,25 +150,26 @@
             </div>
 
             <div class="mb-3">
-                <p class="form-label">Género</p>
-                <div class="genero-container">
-                    <div class="form-check">
-                        <input type="radio" id="hombre" name="genero" value="hombre" class="form-check-input" required>
-                        <label for="hombre" class="form-check-label">Hombre</label>
+                <label for="rol" class="form-label">Género</label>
+                <div class="d-flex">
+                    <div class="form-check ms-4">
+                        <input type="radio" id="ofrecer_servicio" name="rol" value="ofrecer_servicio"
+                            class="form-check-input" required>
+                        <label for="ofrecer_servicio" class="form-check-label">Hombre</label>
                     </div>
-                    <div class="form-check">
-                        <input type="radio" id="mujer" name="genero" value="mujer" class="form-check-input" required>
-                        <label for="mujer" class="form-check-label">Mujer</label>
+                    <div class="form-check ms-4">
+                        <input type="radio" id="usuario" name="rol" value="usuario" class="form-check-input" required>
+                        <label for="usuario" class="form-check-label">Mujer</label>
                     </div>
                 </div>
             </div>
 
             <div class="mb-3 form-check">
                 <input type="checkbox" id="terminos" name="terminos" class="form-check-input" required>
-                <label for="terminos" class="form-check-label">Acepto términos y condiciones</label>
+                <label for="terminos" class="form-check-label"><strong> Acepto términos y condiciones</strong></label>
             </div>
 
-            <button type="submit" class="btn btn-primary w-100">Registrate</button>
+            <button type="submit" class="btn w-80">Registrate</button>
         </form>
 
     </main>

@@ -1,6 +1,5 @@
 @use "reset";
 
-// Formulario
 .containerform {
     max-width: 500px;
     margin: auto;
@@ -31,52 +30,13 @@
         }
     }
 
-    .btn {
-        width: 100%;
-        padding: 10px;
-        background-color: reset.$color_boton;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-
-        &:hover {
-            background-color: darken(reset.$color_boton, 10%);
-        }
-    }
-
     .form-check-label {
         font-size: 14px;
-       
         color: reset.$color_textos;
     }
 
     .form-check-input {
         margin-right: 10px;
-        
     }
 
-    .form-check {
-        margin-bottom: 10px;
-    }
-
-    // Para las opciones de género, las alineamos horizontalmente
-    .genero-container {
-        display: flex;
-        justify-content: centerflex flex-start;  // Alinea las opciones horizontalmente
-        gap: 20px;  // Espacio entre las opciones
-    }
-
-    .genero-container .form-check {
-        display: inline-block;
-        margin-bottom: 0;
-    }
-
-    .form-check {
-        margin-right: 20px;
-    }
-
-    
 }

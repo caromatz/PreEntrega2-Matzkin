@@ -19,31 +19,31 @@
     border-radius: 8px;
     border: 5px solid #ddd;
     margin-bottom: 20px;
-    background-color: #f9f9f9;
-    transition: all 0.3s ease; /* Añadido para suavizar la transición del hover */
+    background-color:reset.$color_contenido;
+    transition: all 0.3s ease; 
 
-    /* Hover global para todos los recuadros */
+   
     &:hover {
-        background-color: #e0e0e0; /* Cambia el color de fondo al pasar el mouse */
-        border-color: #ccc;  /* Cambia el color del borde */
-        transform: scale(1.05); /* Aumenta ligeramente el tamaño del recuadro */
+        background-color: #e0e0e0; 
+        border-color: #ccc;  
+        transform: scale(1.05); 
     }
 
-    /* Efectos específicos para cada área */
+   
     &.nosotros:hover {
-        background-color: #d4edda; /* Color específico para el hover de la sección 'nosotros' */
+        background-color: #d4edda; 
     }
 
     &.historia:hover {
-        background-color: #f8d7da; /* Color específico para el hover de la sección 'historia' */
+        background-color: #d4edda; 
     }
 
     &.mision:hover {
-        background-color: #cce5ff; /* Color específico para el hover de la sección 'mision' */
+        background-color: #d4edda; 
     }
 
     &.valores:hover {
-        background-color: #fff3cd; /* Color específico para el hover de la sección 'valores' */
+        background-color: #d4edda; 
     }
 }
 
@@ -61,8 +61,6 @@
     line-height: 1.6;
     text-align: center;
 }
-
-/* Asignando áreas a las secciones */
 
 .sobre.nosotros {
     grid-area: nosotros;

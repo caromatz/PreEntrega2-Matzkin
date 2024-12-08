@@ -1,91 +1,179 @@
-@use "reset";
-
 @media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0; 
+      }
 
-    .navbar a {
-        margin: 5px 0;
-        width: 100%;
-        text-align: left;
-    }
+  .navbar a {
+    margin: 5px 0; 
+    width: 100%;
+    text-align: left;
+    padding: 10px; 
+  }
 
-    .logo {
-        inline-size: 150px;
-    }
+  .logo {
+    width: 150px;
+  }
 
-    .containerservicios {
-        grid-template-columns: 1fr 1fr;
-    }
+  .containerservicios {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    h1,
-    h2 {
-        font-size: 1.6rem;
-    }
+  h1,
+  h2 {
+    font-size: 1.6rem;
+  }
 
-    p {
-        font-size: 1rem;
-    }
+  p {
+    font-size: 1rem;
+  }
 
-    footer h4 {
-        font-size: 0.9rem;
-    }
+  footer h4 {
+    font-size: 0.9rem;
+  }
 
+  .complemento {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
 
-    .complemento {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        padding: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        position: relative;
-    }
+  
+  .testimonial-image img {
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .carousel-item .testimonial {
+    max-width: 500px;
+  }
+
+  
+  .textonosotros {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "nosotros historia"
+      "mision valores";
+    gap: 20px;
+  }
+
+  .sobre h3 {
+    font-size: 1.6rem;
+  }
+
+  .sobre p {
+    font-size: 1rem;
+  }
+
+  
+  .containerform {
+    width: 90%; 
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .form-control {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  
+
 }
 
 @media screen and (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0; 
+  }
 
-    .navbar a {
-        margin: 5px 0;
-        width: 100%;
-        text-align: left;
-    }
+  .navbar a {
+    margin: 5px 0; 
+    width: 100%;
+    text-align: left;
+    padding: 12px; 
+  }
 
-    .logo {
-        inline-size: 100px;
-    }
+  .logo {
+    width: 100px;
+  }
 
-    .containerservicios {
-        grid-template-columns: 1fr;
-    }
+  .containerservicios {
+    grid-template-columns: 1fr;
+  }
 
-    h1,
-    h2 {
-        font-size: 1.3rem;
-    }
+  h1,
+  h2 {
+    font-size: 1.3rem;
+  }
 
-    p {
-        font-size: 0.8rem;
-    }
+  p {
+    font-size: 0.8rem;
+  }
 
-    footer h4 {
-        font-size: 0.7rem;
-    }
+  footer h4 {
+    font-size: 0.7rem;
+  }
 
+  .complemento {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-    .complemento {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        padding: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+  
+  .testimonial-image img {
+    max-width: 80px;
+    max-height: 80px;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+  }
 
-    }
+  .carousel-item .testimonial {
+    max-width: 100%;
+  }
+
+ 
+  .textonosotros {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nosotros"
+      "historia"
+      "mision"
+      "valores";
+    gap: 15px;
+  }
+
+  .sobre h3 {
+    font-size: 1.4rem;
+  }
+
+  .sobre p {
+    font-size: 0.9rem;
+  }
+
+  .containerform {
+    width: 80%;
+    padding: 10px;
+  }
+
+  .form-control {
+    font-size: 12px;
+    padding: 6px;
+  }
+ 
 }
