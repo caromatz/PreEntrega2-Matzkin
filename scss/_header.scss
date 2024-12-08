@@ -70,19 +70,19 @@ p {
     .dropdown-menu {
         display: none;
         position: absolute;
-             border-radius: 5px;
-               z-index: 2;  
-        width: auto;  
+        border-radius: 5px;
+        z-index: 2;
+        width: auto;
         max-height: 400px;
         overflow-y: auto;
-        overflow-x: hidden;  
+        overflow-x: hidden;
 
         .dropdown-item {
             padding: 8px 16px;
             font-size: 0.85rem;
             font-weight: normal;
             border-radius: 5px;
-            white-space: nowrap;  
+            white-space: nowrap;
 
             &:hover {
                 background-color: reset.$color_boton;

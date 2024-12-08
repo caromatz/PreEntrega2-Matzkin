@@ -19,9 +19,11 @@ header {
   background-color: rgba(186, 203, 163, 0.5529411765);
   padding: 15px;
 }
+
 header .divlogo {
   text-align: center;
 }
+
 header .logo {
   border: 5px solid white;
   border-radius: 10px;
@@ -30,6 +32,7 @@ header .logo {
   inline-size: 200px;
   transition: transform 0.5s ease;
 }
+
 header .logo:hover {
   transform: rotate(360deg);
 }
@@ -59,6 +62,7 @@ p {
   align-items: center;
   background-color: rgba(147, 198, 119, 0.2431372549);
 }
+
 .navbar a {
   text-decoration: none;
   margin: 10px 10px;
@@ -69,10 +73,12 @@ p {
   background-color: rgba(147, 198, 119, 0.2431372549);
   transition: background-color 0.3s, color 0.3s;
 }
+
 .navbar a:hover {
   background-color: rgba(5, 36, 20, 0.6823529412);
   color: white;
 }
+
 .navbar .dropdown-menu {
   display: none;
   position: absolute;
@@ -83,6 +89,7 @@ p {
   overflow-y: auto;
   overflow-x: hidden;
 }
+
 .navbar .dropdown-menu .dropdown-item {
   padding: 8px 16px;
   font-size: 0.85rem;
@@ -90,10 +97,12 @@ p {
   border-radius: 5px;
   white-space: nowrap;
 }
+
 .navbar .dropdown-menu .dropdown-item:hover {
   background-color: rgba(5, 36, 20, 0.6823529412);
   color: white;
 }
+
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -135,6 +144,7 @@ main {
   margin-bottom: 70px;
   padding: 10px;
 }
+
 .complemento .aside-titulo {
   font-family: "Salsa", cursive;
   color: rgb(51, 40, 137);
@@ -143,17 +153,20 @@ main {
   margin-top: 10px;
   padding: 10px;
 }
+
 .complemento .aside-texto {
   color: rgb(51, 40, 137);
   font-size: 1.1rem;
   margin-bottom: 15px;
   padding: 10px;
 }
+
 .complemento .aside-lista {
   list-style-type: disc;
   margin-left: 20px;
   color: rgb(51, 40, 137);
 }
+
 .complemento .aside-lista .ejemplo {
   font-size: 0.9rem;
   margin: 0 auto;
@@ -164,13 +177,17 @@ main {
 }
 
 @keyframes titilar-aside {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0;
   }
 }
+
 .btn {
   background-color: rgba(186, 203, 163, 0.5529411765);
   color: rgba(5, 36, 20, 0.6823529412);
@@ -183,10 +200,12 @@ main {
   border: 4px solid white;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
 .btn:hover {
   background-color: rgba(161.5625, 184.5833333333, 130.4166666667, 0.5529411765);
   color: black;
 }
+
 .btn:hover {
   transform: scale(1.2, 1.2);
   background-color: rgba(149.34375, 175.375, 114.125, 0.5529411765);
@@ -200,6 +219,7 @@ footer {
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
 footer h4 {
   display: inline-block;
   font-size: 1rem;
@@ -225,20 +245,25 @@ footer h4 {
   background-color: white;
   transition: all 0.3s ease;
 }
+
 .sobre:hover {
   background-color: #e0e0e0;
   border-color: #ccc;
   transform: scale(1.05);
 }
+
 .sobre.nosotros:hover {
   background-color: #d4edda;
 }
+
 .sobre.historia:hover {
   background-color: #d4edda;
 }
+
 .sobre.mision:hover {
   background-color: #d4edda;
 }
+
 .sobre.valores:hover {
   background-color: #d4edda;
 }
@@ -274,23 +299,22 @@ footer h4 {
   grid-area: valores;
 }
 
-.serviciosmain {
-  background-color: #f9f9f9;
-}
-.serviciosmain .containerservicios {
+.containerservicios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   text-align: center;
+  overflow-x: hidden;
 }
-.serviciosmain .containerservicios .servicio-item {
+
+.containerservicios .servicio-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.serviciosmain .containerservicios .servicios {
+
+.containerservicios .servicios {
   width: 200px;
-  display: inline-block;
   border-radius: 10px;
   border: rgba(186, 203, 163, 0.5529411765) solid 5px;
   padding: 5px;
@@ -305,6 +329,7 @@ footer h4 {
   border-radius: 8px;
   background-color: white;
 }
+
 .containerform .form-label {
   display: block;
   font-weight: bold;
@@ -312,6 +337,7 @@ footer h4 {
   margin-bottom: 5px;
   padding: 10px;
 }
+
 .containerform .form-control {
   width: 100%;
   padding: 10px;
@@ -320,14 +346,17 @@ footer h4 {
   font-size: 16px;
   background-color: white;
 }
+
 .containerform .form-control:focus {
   border-color: rgba(5, 36, 20, 0.6823529412);
   outline: none;
 }
+
 .containerform .form-check-label {
   font-size: 14px;
   color: rgb(51, 40, 137);
 }
+
 .containerform .form-check-input {
   margin-right: 10px;
 }
@@ -339,11 +368,13 @@ footer h4 {
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
+
 .testimonial .testimonial-image {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
 }
+
 .testimonial .testimonial-image img {
   width: 120px;
   height: 120px;
@@ -354,6 +385,7 @@ footer h4 {
 .carousel-inner .carousel-item {
   text-align: center;
 }
+
 .carousel-inner .carousel-item .testimonial {
   max-width: 600px;
   margin: 0 auto;
@@ -376,6 +408,7 @@ footer h4 {
   background-attachment: fixed;
   position: relative;
 }
+
 .page-404-body:before {
   content: "";
   position: absolute;
@@ -400,10 +433,12 @@ footer h4 {
   padding: 20px;
   background: transparent;
 }
+
 .container-404 .beach-container {
   max-width: 600px;
   margin: 20px;
 }
+
 .container-404 .beach-container .code-404 {
   font-size: 2rem;
   font-weight: bolder;
@@ -411,6 +446,7 @@ footer h4 {
   color: rgb(51, 40, 137);
   text-align: center;
 }
+
 .container-404 .beach-container .message,
 .container-404 .beach-container .reload-message,
 .container-404 .beach-container .beach-message {
@@ -420,6 +456,7 @@ footer h4 {
   font-family: "Roboto", sans-serif;
   color: rgb(51, 40, 137);
 }
+
 .container-404 .return-link {
   font-size: 1.2rem;
   color: rgb(51, 40, 137);
@@ -430,6 +467,7 @@ footer h4 {
   border-radius: 50px;
   transition: background-color 0.3s;
 }
+
 .container-404 .return-link:hover {
   background-color: #c92287;
   color: white;
@@ -449,37 +487,44 @@ footer h4 {
     align-items: flex-start;
     padding: 10px 0;
   }
+
   .navbar a {
     margin: 5px 0;
     width: 100%;
     text-align: left;
     padding: 10px;
   }
+
   .logo {
     width: 150px;
   }
+
   .containerservicios {
     grid-template-columns: 1fr 1fr;
+    width: 100%;
+    overflow: hidden;
   }
+
   h1,
   h2 {
     font-size: 1.6rem;
   }
+
   p {
     font-size: 1rem;
   }
+
   footer h4 {
     font-size: 0.9rem;
   }
+
   .complemento {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    max-width: 80%;
     position: relative;
   }
+
   .testimonial-image img {
     max-width: 100px;
     max-height: 100px;
@@ -487,67 +532,81 @@ footer h4 {
     height: auto;
     border-radius: 50%;
   }
+
   .carousel-item .testimonial {
     max-width: 500px;
   }
+
   .textonosotros {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "nosotros historia" "mision valores";
     gap: 20px;
   }
+
   .sobre h3 {
     font-size: 1.6rem;
   }
+
   .sobre p {
     font-size: 1rem;
   }
+
   .containerform {
     width: 90%;
     padding: 15px;
     margin: 0 auto;
   }
+
   .form-control {
     font-size: 14px;
     padding: 8px;
   }
 }
+
 @media screen and (max-width: 480px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 0;
   }
+
   .navbar a {
     margin: 5px 0;
     width: 100%;
     text-align: left;
     padding: 12px;
   }
+
   .logo {
     width: 100px;
   }
+
   .containerservicios {
     grid-template-columns: 1fr;
+    width: 100%;
+    overflow: hidden;
   }
+
   h1,
   h2 {
     font-size: 1.3rem;
   }
+
   p {
     font-size: 0.8rem;
   }
+
   footer h4 {
     font-size: 0.7rem;
   }
+
   .complemento {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    max-width: 60%;
   }
+
   .testimonial-image img {
     max-width: 80px;
     max-height: 80px;
@@ -555,24 +614,30 @@ footer h4 {
     height: auto;
     border-radius: 50%;
   }
+
   .carousel-item .testimonial {
     max-width: 100%;
   }
+
   .textonosotros {
     grid-template-columns: 1fr;
     grid-template-areas: "nosotros" "historia" "mision" "valores";
     gap: 15px;
   }
+
   .sobre h3 {
     font-size: 1.4rem;
   }
+
   .sobre p {
     font-size: 0.9rem;
   }
+
   .containerform {
     width: 80%;
     padding: 10px;
   }
+
   .form-control {
     font-size: 12px;
     padding: 6px;
